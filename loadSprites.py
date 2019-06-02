@@ -9,7 +9,8 @@ class loadSprites(object):
         self.penguinIdleFolder = os.path.join(self.image_path, 'penguinIdle')
         self.penguinJumpFolder = os.path.join(self.image_path, 'penguinJump')
         self.penguinSlideStartFolder = os.path.join(self.image_path, 'penguinSlideStart')
-
+        self.penguinIdlePistolShootFolder = os.path.join(self.image_path, 'penguinIdlePistolShoot')
+        self.bulletFolder = os.path.join(self.image_path, 'bullets')
         return
 
     def walkLeft(self):
@@ -247,3 +248,47 @@ class loadSprites(object):
                           pygame.image.load(os.path.join(self.penguinSlideStartFolder, 'PenguinSlideStartLeft_31.png')),
                           pygame.image.load(os.path.join(self.penguinSlideStartFolder, 'PenguinSlideStartLeft_32.png'))]
         return startSlideLeft
+
+    def penguinIdlePistolShootRight(self):
+
+        penguinIdlePistolShootRight =[pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_0.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_1.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_2.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_3.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_4.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_5.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_6.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_7.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootRight_8.png'))]
+
+        return penguinIdlePistolShootRight
+    def penguinIdlePistolShootLeft(self):
+
+        penguinIdlePistolShootLeft =[pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_0.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_1.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_2.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_3.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_4.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_5.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_6.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_7.png')),
+                                      pygame.image.load(os.path.join(self.penguinIdlePistolShootFolder,
+                                                                     'PenguinIdlePistolShootLeft_8.png'))]
+        return penguinIdlePistolShootLeft
