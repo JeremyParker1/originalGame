@@ -22,6 +22,4 @@ class projectile(object):
             window.blit(bulletRight, (self.x, self.y))
         else:
             window.blit(bulletLeft, (self.x, self.y))
-            #TODO: fix bullet release points facing left and right, crouching left and right
-            #TODO: add shooting animation for crouching, implement reload animation
-            #TODO: Fix github commits
+            #TODO: implement reload animation

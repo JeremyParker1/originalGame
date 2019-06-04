@@ -73,11 +73,17 @@ while not crashed:
         else:
             facing = 1
         if len(bullets) < 8:
+            man.shooting = True
             if not man.crouching:
-                man.shooting = True
-                bullets.append(projectile(round(man.x + man.width), round(man.y + 50), facing))
+                if man.right:
+                    bullets.append(projectile(round(man.x + man.width), round(man.y + 20), facing))
+                else:
+                    bullets.append(projectile(round(man.x - 25), round(man.y + 20), facing))
             else:
-                bullets.append(projectile(round(man.x + man.width), round(man.y + 80), facing))
+                if man.right:
+                    bullets.append(projectile(round(man.x + man.width + 29), round(man.y + 65), facing))
+                else:
+                    bullets.append(projectile(round(man.x - man.width + 32), round(man.y + 65), facing))
             shootLoop = 1
     if pressed_down and not man.isJump:  # allows crouching if character is not jumping
         man.crouching = True
